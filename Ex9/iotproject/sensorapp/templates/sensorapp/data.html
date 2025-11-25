@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Sensor Data</title></head>
+<body>
+  <h1>Sensor Data from Firebase</h1>
+  {% if sensor_data %}
+    <ul>
+      {% for item in sensor_data %}
+        <li>
+          {{ item.sensor_type }} : {{ item.value }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No sensor data found.</p>
+  {% endif %}
+</body>
+</html>
