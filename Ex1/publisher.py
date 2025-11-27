@@ -10,3 +10,6 @@ while True:
     msg = input("Enter message to send: ")
     client.publish(topic, msg)
     print("Message Published")
+
+
+#pip install paho-mqtt 
